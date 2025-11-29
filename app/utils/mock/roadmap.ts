@@ -1,3 +1,5 @@
+import type { MockRoadmap } from "~/types/types";
+
 export function getMockRoadmap() {
   const data: MockRoadmap[] = [
     {

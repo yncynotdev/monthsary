@@ -1,4 +1,4 @@
-import type { MockGallery } from "../types";
+import type { MockGallery } from "~/types/types";
 
 export function getMockGallery() {
   const data: MockGallery[] = [

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { GalleryCard } from "@/utils/types"
+import type { GalleryCard } from '~/types/types';
 
 const props = defineProps<GalleryCard>();
 </script>

@@ -1,7 +1,4 @@
 <script setup lang="ts" generic="T">
-// The reason why MockRoadmap even for the props because just the same types I need
-import type { MockRoadmap } from "#imports";
-
 const props = defineProps<MockRoadmap>();
 </script>
 

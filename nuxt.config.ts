@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "reka-ui/nuxt",
     "@nuxt/image",
+    "@pinia/nuxt",
   ],
 
   future: {

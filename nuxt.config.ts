@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "reka-ui/nuxt",
     "@nuxt/image",
+    "@pinia/nuxt",
   ],
 
   future: {
@@ -83,6 +84,19 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/css/main.css"],
+
+  pinia: {
+    storesDirs: ["./stores/**", "./custom-folder/stores/**"],
+  },
+
+  nitro: {
+    experimental: {
+      tasks: true,
+    },
+    scheduledTasks: {
+      "0 0 * * *": ["monthsary"],
+    },
+  },
 
   ui: {
     theme: {

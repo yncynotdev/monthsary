@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import dayjs from "dayjs";
-
-import type { DimDate, Images } from "@/types/database.types"
+import type { DimDate, Images } from "@/types/types";
 
 const imageUrls = ref<Images[] | string[]>([]);
 const dates = ref<DimDate[] | null>([]);

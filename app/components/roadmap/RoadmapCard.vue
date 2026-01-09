@@ -1,15 +1,12 @@
 <script setup lang="ts" generic="T">
-// The reason why MockRoadmap even for the props because just the same types I need
-import type { MockRoadmap } from "#imports";
+import type { MockRoadmap } from "@/types/types";
 
 const props = defineProps<MockRoadmap>();
 </script>
 
 <template>
-
   <UCard
-    class="max-w-screen w-full lg:w-[1000px] bg-mocha-base flex flex-col items-center justify-center text-center mb-14"
-  >
+    class="max-w-screen w-full lg:w-[1000px] bg-mocha-base flex flex-col items-center justify-center text-center mb-14">
     <!-- Header -->
     <template #header>
       <h2 class="text-2xl lg:text-3xl font-bold drop-shadow-latte-primary p-4 lg:p-7">
@@ -18,7 +15,7 @@ const props = defineProps<MockRoadmap>();
     </template>
 
     <!-- Body -->
-    <ImageCard :img="props.img" :date="props.date" :done="props.done"/>
+    <ImageCard :img="props.img" :date="props.date" :done="props.done" />
 
     <!-- Footer -->
     <template #footer>

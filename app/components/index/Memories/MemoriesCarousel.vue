@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
 
-import type { IndexMemories, MockGallery } from "@/utils/types"
+import type { IndexMemories, MockGallery } from "~/types/types"
 
 const { userAuth } = useAuthState()
 

@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         },
         {
           name: "author",
-          content: "Yncy0",
+          content: "ynycnotdev",
         },
       ],
     },
@@ -90,6 +90,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: "vercel",
     experimental: {
       tasks: true,
     },
@@ -99,10 +100,6 @@ export default defineNuxtConfig({
     prerender: {
       autoSubfolderIndex: true,
     },
-  },
-
-  routeRules: {
-    "/": { prerender: true },
   },
 
   ui: {

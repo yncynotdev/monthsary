@@ -90,7 +90,6 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: "vercel",
     experimental: {
       tasks: true,
     },

@@ -101,6 +101,10 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    "/": { prerender: true },
+  },
+
   ui: {
     theme: {
       colors: [

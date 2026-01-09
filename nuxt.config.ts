@@ -96,6 +96,9 @@ export default defineNuxtConfig({
     scheduledTasks: {
       "0 0 * * *": ["monthsary"],
     },
+    prerender: {
+      autoSubfolderIndex: true,
+    },
   },
 
   ui: {

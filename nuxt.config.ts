@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/ui",
     "@nuxt/fonts",
-    "@nuxthub/core",
     "@nuxtjs/supabase",
     "@tresjs/nuxt",
     "@nuxt/eslint",
@@ -90,12 +89,12 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    experimental: {
-      tasks: true,
-    },
-    scheduledTasks: {
-      "0 0 * * *": ["monthsary"],
-    },
+    // experimental: {
+    //   tasks: true,
+    // },
+    // scheduledTasks: {
+    //   "0 0 * * *": ["monthsary"],
+    // },
     prerender: {
       autoSubfolderIndex: true,
     },

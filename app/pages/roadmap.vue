@@ -1,5 +1,5 @@
 <script setup lang="ts" generic="T">
-import type { Roadmap, MockRoadmap } from "#imports"
+import type { Roadmap, MockRoadmap } from "@/types/types"
 
 definePageMeta({
   colorMode: "dark"

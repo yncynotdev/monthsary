@@ -2,7 +2,7 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
-let scene, camera, renderer, controls;
+let scene, camera, renderer;
 let model, mixer, clock;
 
 const loader = new GLTFLoader();
@@ -33,7 +33,7 @@ function init() {
 
   const canvas = document.querySelector("#bg");
   renderer = new THREE.WebGLRenderer({ alpha: true, canvas: canvas });
-  renderer.setPixelRatio(window.devicePixelRation);
+  renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   loadModel();

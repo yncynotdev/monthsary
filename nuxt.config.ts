@@ -85,6 +85,19 @@ export default defineNuxtConfig({
 
   css: ["~/assets/css/main.css"],
 
+  pinia: {
+    storesDirs: ["./stores/**", "./custom-folder/stores/**"],
+  },
+
+  nitro: {
+    experimental: {
+      tasks: true,
+    },
+    scheduledTasks: {
+      "0 0 * * *": ["monthsary"],
+    },
+  },
+
   ui: {
     theme: {
       colors: [

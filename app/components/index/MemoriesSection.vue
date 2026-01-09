@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { IndexMemories, MockGallery } from "@/utils/types";
+import type { IndexMemories, MockGallery } from "~/types/types";
 
 const { userAuth } = useAuthState();
 

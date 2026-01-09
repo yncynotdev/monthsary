@@ -1,5 +1,5 @@
 <script setup lang="ts" generic="T">
-import type { MockRoadmap } from '~/types/types';
+import type { MockRoadmap } from "@/types/types";
 
 const props = defineProps<MockRoadmap>();
 </script>

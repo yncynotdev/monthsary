@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Roadmap, MockRoadmap } from "#imports"
+import type { Roadmap, MockRoadmap } from "@/types/types"
 
 const fetchedItems = ref<Roadmap[]>([]);
 const mockItems = ref<MockRoadmap[]>([])

@@ -25,3 +25,5 @@ logs
 
 # Cloudflare
 .wrangler
+
+.vscode

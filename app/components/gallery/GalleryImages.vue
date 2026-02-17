@@ -17,12 +17,13 @@ onMounted(async () => {
     imageUrls.value = images.value;
   }
 });
+    // class="flex flex-row flex-wrap w-full object-cover gap-5 lg:gap-2 px-6 lg:px-24"
 </script>
 
 <template>
   <ul 
     v-if="!userAuth"
-    class="flex flex-row flex-wrap w-full object-cover gap-5 lg:gap-2 px-6 lg:px-24"
+    class="grid grid-cols-5 gap-3"
   >
     <li v-for="(image, index) in imageUrls" :key="index">
       <img
@@ -46,7 +47,7 @@ onMounted(async () => {
       <h2 class="font-bold lg:text-3xl text-xl drop-shadow-latte-primary">
         {{ dayjs(date.date).format("MMMM DD, YYYY") }}
       </h2>
-      <ul class="flex justify-start flex-wrap px-6 lg:px-0">
+      <ul class="grid grid-cols-5 gap-3">
         <li 
           v-for="(imageUrl, imageUrlIndex) in imageUrls"
           :key="imageUrlIndex"
